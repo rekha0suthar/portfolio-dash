@@ -49,24 +49,24 @@ const PortfolioTable = memo(function PortfolioTable({ rows }: { rows: ComputedRo
     const table = useReactTable({ data: rows, columns, getCoreRowModel: getCoreRowModel() });
 
     return (
-        <div className="overflow-auto">
-            <table className="min-w-full text-sm">
-                <thead className="bg-gray-50">
+        <div className="overflow-x-auto">
+            <table className="min-w-full">
+                <thead className="bg-gradient-to-r from-gray-50 to-gray-100">
                     {table.getHeaderGroups().map(hg => (
                         <tr key={hg.id} className="border-b border-gray-200">
                             {hg.headers.map(h => (
-                                <th key={h.id} className="text-left px-4 py-3 font-semibold text-gray-900 whitespace-nowrap text-xs uppercase tracking-wider">
+                                <th key={h.id} className="text-left px-6 py-4 font-bold text-gray-900 whitespace-nowrap text-sm uppercase tracking-wider">
                                     {flexRender(h.column.columnDef.header, h.getContext())}
                                 </th>
                             ))}
                         </tr>
                     ))}
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="bg-white divide-y divide-gray-100">
                     {table.getRowModel().rows.map((r, index) => (
-                        <tr key={r.id} className={`hover:bg-gray-50 transition-colors ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                        <tr key={r.id} className={`hover:bg-blue-50/50 transition-all duration-200 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
                             {r.getVisibleCells().map(c => (
-                                <td key={c.id} className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
+                                <td key={c.id} className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
                                     {flexRender(c.column.columnDef.cell, c.getContext())}
                                 </td>
                             ))}
