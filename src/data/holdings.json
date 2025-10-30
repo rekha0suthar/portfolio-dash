@@ -1,0 +1,98 @@
+[
+    {
+        "ticker": "INFY.NS",
+        "name": "Infosys",
+        "sector": "Technology",
+        "exchange": "NSE",
+        "purchasePrice": 1380,
+        "qty": 12
+    },
+    {
+        "ticker": "TCS.NS",
+        "name": "TCS",
+        "sector": "Technology",
+        "exchange": "NSE",
+        "purchasePrice": 3900,
+        "qty": 3
+    },
+    {
+        "ticker": "HDFCBANK.NS",
+        "name": "HDFC Bank",
+        "sector": "Financials",
+        "exchange": "NSE",
+        "purchasePrice": 1450,
+        "qty": 10
+    },
+    {
+        "ticker": "ICICIBANK.NS",
+        "name": "ICICI Bank",
+        "sector": "Financials",
+        "exchange": "NSE",
+        "purchasePrice": 950,
+        "qty": 15
+    },
+    {
+        "ticker": "RELIANCE.NS",
+        "name": "Reliance",
+        "sector": "Energy",
+        "exchange": "NSE",
+        "purchasePrice": 2300,
+        "qty": 5
+    },
+    {
+        "ticker": "ONGC.NS",
+        "name": "ONGC",
+        "sector": "Energy",
+        "exchange": "NSE",
+        "purchasePrice": 180,
+        "qty": 50
+    },
+    {
+        "ticker": "ITC.NS",
+        "name": "ITC",
+        "sector": "FMCG",
+        "exchange": "NSE",
+        "purchasePrice": 450,
+        "qty": 20
+    },
+    {
+        "ticker": "HINDUNILVR.NS",
+        "name": "Hindustan Unilever",
+        "sector": "FMCG",
+        "exchange": "NSE",
+        "purchasePrice": 2500,
+        "qty": 8
+    },
+    {
+        "ticker": "TITAN.NS",
+        "name": "Titan",
+        "sector": "Consumer Goods",
+        "exchange": "NSE",
+        "purchasePrice": 3200,
+        "qty": 5
+    },
+    {
+        "ticker": "MARUTI.NS",
+        "name": "Maruti Suzuki",
+        "sector": "Automobile",
+        "exchange": "NSE",
+        "purchasePrice": 8500,
+        "qty": 2
+    },
+    {
+        "ticker": "BAJFINANCE.NS",
+        "name": "Bajaj Finance",
+        "sector": "Financials",
+        "exchange": "NSE",
+        "purchasePrice": 7200,
+        "qty": 3
+    },
+    {
+        "ticker": "WIPRO.NS",
+        "name": "Wipro",
+        "sector": "Technology",
+        "exchange": "NSE",
+        "purchasePrice": 420,
+        "qty": 25
+    }
+]
