@@ -184,8 +184,30 @@ export default function Page() {
           {/* Chart Section */}
           <div className="space-y-6 xl:col-span-1">
             <h2 className="text-2xl font-bold text-gray-900">Portfolio Distribution</h2>
-            {!isLoading && rows.length > 0 && (
-              <PortfolioChart data={rows} />
+            {isLoading ? (
+              <div className="bg-white rounded-lg shadow border border-gray-200 p-4 sm:p-6">
+                <div className="h-96 sm:h-[28rem] lg:h-[32rem] flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-32 h-32 bg-gray-200 rounded-full animate-pulse mx-auto mb-4"></div>
+                    <div className="space-y-2">
+                      <div className="h-4 bg-gray-200 rounded animate-pulse w-24 mx-auto"></div>
+                      <div className="h-3 bg-gray-200 rounded animate-pulse w-32 mx-auto"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 grid grid-cols-2 gap-2">
+                  {Array.from({ length: 6 }).map((_, i) => (
+                    <div key={i} className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-gray-200 rounded-full animate-pulse"></div>
+                      <div className="h-3 bg-gray-200 rounded animate-pulse flex-1"></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              !isLoading && rows.length > 0 && (
+                <PortfolioChart data={rows} />
+              )
             )}
           </div>
         </div>
